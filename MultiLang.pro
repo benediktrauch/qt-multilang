@@ -32,3 +32,9 @@ HEADERS += \
 
 FORMS += \
         mainwindow.ui
+
+TRANSLATIONS += \
+        translation_de_DE.ts \
+        translation_en_US.ts \
+        translation_zh_CN.ts \
+        translation_ar_SA.ts
