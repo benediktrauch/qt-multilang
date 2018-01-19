@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/icon_1_ar_SA.png</file>
+        <file>icons/icon_1_ch_CN.png</file>
+        <file>icons/icon_1_de_DE.png</file>
+        <file>icons/icon_1_en_US.png</file>
+    </qresource>
+</RCC>

@@ -12,7 +12,7 @@
         <location filename="mainwindow.ui" line="21"/>
         <source>Hallo Welt!</source>
         <extracomment>Ein Kommentar.</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>你好世界！</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="41"/>

@@ -38,3 +38,6 @@ TRANSLATIONS += \
         translation_en_US.ts \
         translation_zh_CN.ts \
         translation_ar_SA.ts
+
+RESOURCES += \
+    icons.qrc
