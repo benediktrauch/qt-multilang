@@ -22,28 +22,28 @@
         <item>
          <widget class="QPushButton" name="pushButton_1">
           <property name="text">
-           <string>PushButton</string>
+           <string>PushButton 1</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="pushButton_3">
           <property name="text">
-           <string>PushButton</string>
+           <string>PushButton 2</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="pushButton_2">
           <property name="text">
-           <string>PushButton</string>
+           <string>PushButton 3</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="pushButton_4">
           <property name="text">
-           <string>PushButton</string>
+           <string>PushButton 4</string>
           </property>
          </widget>
         </item>
@@ -223,6 +223,13 @@
     <property name="title">
      <string>Extras</string>
     </property>
+    <widget class="QMenu" name="menuSprache">
+     <property name="title">
+      <string>Sprache</string>
+     </property>
+     <addaction name="actionSystem"/>
+    </widget>
+    <addaction name="menuSprache"/>
    </widget>
    <addaction name="menuDatei"/>
    <addaction name="menuExtras"/>
@@ -249,6 +256,11 @@
   <action name="actionBeenden">
    <property name="text">
     <string>Beenden</string>
+   </property>
+  </action>
+  <action name="actionSystem">
+   <property name="text">
+    <string>System</string>
    </property>
   </action>
  </widget>
