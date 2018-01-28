@@ -44,6 +44,10 @@ MainWindow::MainWindow(QWidget *parent) :
     m_currentTranslate.load("translation_de_DE");
     QApplication::installTranslator(&m_currentTranslate);
 
+    this->setDate(QDateTime::currentDateTimeUtc().toString(Qt::DefaultLocaleShortDate).chopped(6));
+    this->setEnteredText("...");
+    this->setFloatNumber(0.0);
+    this->setIntNumber(0);
     ui->setupUi(this);
 
     this->setCurrentLocale(QLocale::German);
@@ -79,6 +83,54 @@ MainWindow::~MainWindow()
 void MainWindow::retranslate()
 {
     qDebug() << "retranslate";
+
+    ui->date_label->setText(tr("Gewähltes Datum: ") + this->date());
+
+    ui->number_input_text->setText(tr("Du hast %1 Liter %2 getrunken.").arg(m_currentLocale.toString(floatNumber()), enteredText()));
+
+    ui->slider_label->setText(tr("In meinem Haus wohnt %Ln Mensch(en).", "", this->intNumber()));
+
+    ui->calendarWidget->setLocale(m_currentLocale);
+}
+
+QString MainWindow::date() const
+{
+    return m_date;
+}
+
+void MainWindow::setDate(const QString &date)
+{
+    m_date = date;
+}
+
+QString MainWindow::enteredText() const
+{
+    return m_enteredText;
+}
+
+void MainWindow::setEnteredText(const QString &enteredText)
+{
+    m_enteredText = enteredText;
+}
+
+float MainWindow::floatNumber() const
+{
+    return m_floatNumber;
+}
+
+void MainWindow::setFloatNumber(float floatNumber)
+{
+    m_floatNumber = floatNumber;
+}
+
+int MainWindow::intNumber() const
+{
+    return m_intNumber;
+}
+
+void MainWindow::setIntNumber(int intNumber)
+{
+    m_intNumber = intNumber;
 }
 
 QLocale MainWindow::currentLocale() const
@@ -102,7 +154,7 @@ void MainWindow::on_comboBox_currentIndexChanged(int index)
     m_currentTranslate.load("translation_" + countryCode);
     QApplication::installTranslator(&m_currentTranslate);
 
-    this->setCurrentLocale(m_currentLocale);
+    this->setCurrentLocale(QLocale(countryCode));
     QLocale::setDefault(m_currentLocale);
 
     ui->retranslateUi(this);
@@ -112,3 +164,27 @@ void MainWindow::on_comboBox_currentIndexChanged(int index)
 }
 
 
+
+void MainWindow::on_lineEdit_textChanged(const QString &arg1)
+{
+       setEnteredText(arg1);
+       retranslate();
+}
+
+void MainWindow::on_calendarWidget_clicked(const QDate &date)
+{
+    this->setDate(date.toString(Qt::DefaultLocaleLongDate));
+    retranslate();
+}
+
+void MainWindow::on_doubleSpinBox_valueChanged(double arg1)
+{
+    setFloatNumber(arg1);
+    retranslate();
+}
+
+void MainWindow::on_horizontalSlider_valueChanged(int value)
+{
+    setIntNumber(value);
+    retranslate();
+}
