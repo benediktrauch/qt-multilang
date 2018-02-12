@@ -4,5 +4,9 @@
         <file>icons/icon_1_ch_CN.png</file>
         <file>icons/icon_1_de_DE.png</file>
         <file>icons/icon_1_en_US.png</file>
+        <file>icons/fearful.png</file>
+        <file>icons/neutral.png</file>
+        <file>icons/smiling.png</file>
+        <file>icons/thinking.png</file>
     </qresource>
 </RCC>

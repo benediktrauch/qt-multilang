@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/bread_ar.jpg</file>
+        <file>images/bread_ch.jpg</file>
+        <file>images/bread_de.jpg</file>
+        <file>images/bread_us.jpg</file>
+    </qresource>
+</RCC>

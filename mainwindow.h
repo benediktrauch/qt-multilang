@@ -8,6 +8,7 @@
 #include <QTranslator>
 #include <QDateTime>
 #include <QStringBuilder>
+#include <QAction>
 
 namespace Ui {
 class MainWindow;
@@ -47,6 +48,11 @@ protected:
     float m_floatNumber;
     int m_intNumber;
 
+    QAction *action_DE;
+    QAction *action_US;
+    QAction *action_CN;
+    QAction *action_AR;
+
 
 private slots:
     void on_comboBox_currentIndexChanged(int index);
@@ -59,6 +65,11 @@ private slots:
     void on_doubleSpinBox_valueChanged(double arg1);
 
     void on_horizontalSlider_valueChanged(int value);
+
+    void on_de_selected();
+    void on_us_selected();
+    void on_cn_selected();
+    void on_ar_selected();
 
 private:
     Ui::MainWindow *ui;

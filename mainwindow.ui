@@ -27,6 +27,13 @@
     </item>
     <item row="1" column="0">
      <layout class="QGridLayout" name="gridLayout_4">
+      <item row="1" column="0">
+       <widget class="Line" name="line_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
       <item row="2" column="3">
        <widget class="Line" name="line_2">
         <property name="orientation">
@@ -41,8 +48,8 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="Line" name="line_6">
+      <item row="1" column="4">
+       <widget class="Line" name="line_7">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -52,40 +59,153 @@
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <widget class="QPushButton" name="pushButton_1">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
           <property name="text">
            <string>PushButton 1</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons.qrc">
+            <normaloff>:/icons/smiling.png</normaloff>:/icons/smiling.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="pushButton_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
           <property name="text">
            <string>PushButton 2</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons.qrc">
+            <normaloff>:/icons/neutral.png</normaloff>:/icons/neutral.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="pushButton_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
           <property name="text">
            <string>PushButton 3</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons.qrc">
+            <normaloff>:/icons/thinking.png</normaloff>:/icons/thinking.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="pushButton_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
           <property name="text">
            <string>PushButton 4</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons.qrc">
+            <normaloff>:/icons/fearful.png</normaloff>:/icons/fearful.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="shortcut">
+           <string>CapsLock</string>
           </property>
          </widget>
         </item>
        </layout>
       </item>
-      <item row="1" column="4">
-       <widget class="Line" name="line_7">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
+      <item row="0" column="0">
+       <widget class="QComboBox" name="comboBox"/>
       </item>
       <item row="2" column="1">
        <widget class="Line" name="line">
@@ -100,9 +220,6 @@
          <enum>Qt::Horizontal</enum>
         </property>
        </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QComboBox" name="comboBox"/>
       </item>
       <item row="0" column="2">
        <layout class="QFormLayout" name="formLayout">
@@ -125,6 +242,9 @@
         </item>
         <item row="1" column="1">
          <widget class="QDoubleSpinBox" name="doubleSpinBox">
+          <property name="specialValueText">
+           <string/>
+          </property>
           <property name="decimals">
            <number>2</number>
           </property>
@@ -148,6 +268,27 @@
         </item>
        </layout>
       </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="image_label">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/images/bread_de.jpg);
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
       <item row="0" column="4">
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="1" column="1">
@@ -170,7 +311,7 @@
            <number>1</number>
           </property>
           <property name="maximum">
-           <number>200</number>
+           <number>1000</number>
           </property>
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
@@ -180,25 +321,11 @@
         <item row="0" column="2">
          <widget class="QLabel" name="slider_end_label">
           <property name="text">
-           <string>200</string>
+           <string>1000</string>
           </property>
          </widget>
         </item>
        </layout>
-      </item>
-      <item row="0" column="1">
-       <widget class="Line" name="line_3">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="image_label">
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
       </item>
       <item row="2" column="2">
        <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -229,7 +356,7 @@
    </property>
    <widget class="QMenu" name="menuDatei">
     <property name="title">
-     <string>Datei</string>
+     <string>&amp;Datei</string>
     </property>
     <addaction name="action_ffnen"/>
     <addaction name="actionSpeichern"/>
@@ -237,7 +364,7 @@
    </widget>
    <widget class="QMenu" name="menuExtras">
     <property name="title">
-     <string>Extras</string>
+     <string>&amp;Extras</string>
     </property>
     <widget class="QMenu" name="menuSprache">
      <property name="title">
@@ -261,26 +388,40 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="action_ffnen">
    <property name="text">
-    <string>Öffnen</string>
+    <string>Ö&amp;ffnen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
    </property>
   </action>
   <action name="actionSpeichern">
    <property name="text">
-    <string>Speichern</string>
+    <string>&amp;Speichern</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
   </action>
   <action name="actionBeenden">
    <property name="text">
-    <string>Beenden</string>
+    <string>&amp;Beenden</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
    </property>
   </action>
   <action name="actionSystem">
    <property name="text">
-    <string>System</string>
+    <string>S&amp;ystem</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
    </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

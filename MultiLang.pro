@@ -40,4 +40,7 @@ TRANSLATIONS += \
         translation_ar_SA.ts
 
 RESOURCES += \
-    icons.qrc
+    icons.qrc \
+    images.qrc
+
+DISTFILES +=

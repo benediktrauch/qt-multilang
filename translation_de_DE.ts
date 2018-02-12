@@ -9,66 +9,91 @@
         <translation>Mehrsprachig</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="56"/>
+        <location filename="mainwindow.ui" line="86"/>
         <source>PushButton 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lächeln</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="63"/>
+        <location filename="mainwindow.ui" line="120"/>
         <source>PushButton 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Neutral</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="70"/>
+        <location filename="mainwindow.ui" line="154"/>
         <source>PushButton 3</source>
-        <translation type="unfinished"></translation>
+        <translation>Denken</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="77"/>
+        <location filename="mainwindow.ui" line="188"/>
         <source>PushButton 4</source>
+        <translation>Angst</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="201"/>
+        <source>CapsLock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="112"/>
+        <location filename="mainwindow.ui" line="229"/>
         <source>Was hast du getrunken?</source>
-        <translation type="unfinished"></translation>
+        <translation>Was hast du getrunken?</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="122"/>
+        <location filename="mainwindow.ui" line="239"/>
         <source>Wie viel Lieter hast du getrunken?</source>
-        <translation type="unfinished"></translation>
+        <translation>Wie viel Lieter hast du getrunken?</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="142"/>
+        <location filename="mainwindow.ui" line="259"/>
         <source>Du hast %1 Liter ... getrunken.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ich habe %1 Liter ... getrunken.</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="156"/>
-        <source>In meinem Haus wohn(en) %Ln Mensch(en).</source>
-        <oldsource>In meinem Haus wohnen ... Menschen.</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mainwindow.ui" line="196"/>
-        <source>TextLabel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mainwindow.ui" line="208"/>
-        <location filename="mainwindow.cpp" line="87"/>
+        <location filename="mainwindow.ui" line="335"/>
+        <location filename="mainwindow.cpp" line="79"/>
         <source>Gewähltes Datum: </source>
-        <translation type="unfinished"></translation>
+        <translation>Gewähltes Datum: </translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="163"/>
-        <source>0</source>
-        <translation type="unfinished"></translation>
+        <location filename="mainwindow.ui" line="391"/>
+        <source>Ctrl+F</source>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="180"/>
-        <source>200</source>
-        <translation type="unfinished"></translation>
+        <location filename="mainwindow.ui" line="396"/>
+        <source>&amp;Speichern</source>
+        <translation>&amp;Speichern</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="399"/>
+        <source>Ctrl+S</source>
+        <translation>Ctrl+S</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="404"/>
+        <source>&amp;Beenden</source>
+        <translation>&amp;Beenden</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="407"/>
+        <source>Ctrl+B</source>
+        <translation>Ctrl+B</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="412"/>
+        <source>S&amp;ystem</source>
+        <translation>S&amp;ystem</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="415"/>
+        <source>Ctrl+Y</source>
+        <translation>Ctrl+Y</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="321"/>
+        <source>1000</source>
+        <oldsource>200</oldsource>
+        <translation type="unfinished">1000</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="21"/>
@@ -77,47 +102,77 @@
         <translation>Hallo Welt!</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="229"/>
-        <source>Datei</source>
-        <translation>Datei</translation>
+        <location filename="mainwindow.ui" line="294"/>
+        <source>In meinem Haus wohnt %Ln Mensch.</source>
+        <translation>In meinem Haus wohn(en) %Ln Mensch(en).</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="237"/>
-        <source>Extras</source>
-        <translation>Extras</translation>
+        <location filename="mainwindow.ui" line="301"/>
+        <source>1</source>
+        <translation>1</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="241"/>
+        <location filename="mainwindow.ui" line="356"/>
+        <source>&amp;Datei</source>
+        <oldsource>Datei</oldsource>
+        <translation>&amp;Datei</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="364"/>
+        <source>&amp;Extras</source>
+        <oldsource>Extras</oldsource>
+        <translation>&amp;Extras</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="368"/>
         <source>Sprache</source>
         <translation>Sprache</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="261"/>
-        <source>Öffnen</source>
-        <translation>Öffnen</translation>
+        <location filename="mainwindow.ui" line="388"/>
+        <source>Ö&amp;ffnen</source>
+        <oldsource>Öffnen</oldsource>
+        <translation>Ö&amp;ffnen</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="266"/>
         <source>Speichern</source>
-        <translation>Speichern</translation>
+        <translation type="vanished">Speichern</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="271"/>
         <source>Beenden</source>
-        <translation>Beenden</translation>
+        <translation type="vanished">Beenden</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="276"/>
         <source>System</source>
-        <translation>System</translation>
+        <translation type="vanished">System</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="89"/>
-        <source>Du hast %1 Liter %2 getrunken.</source>
+        <location filename="mainwindow.cpp" line="31"/>
+        <source>Deutsch | Deutschland</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="mainwindow.cpp" line="39"/>
+        <source>English | USA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="47"/>
+        <source>中国 | 中华人民共和国</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="55"/>
+        <source>العربية | المملكة العربية السعودية</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="81"/>
+        <source>Du hast %1 Liter %2 getrunken.</source>
+        <translation>Ich habe %1 Liter %2 getrunken.</translation>
+    </message>
     <message numerus="yes">
-        <location filename="mainwindow.cpp" line="91"/>
+        <location filename="mainwindow.cpp" line="83"/>
         <source>In meinem Haus wohnt %Ln Mensch(en).</source>
         <translation>
             <numerusform>In meinem Haus wohnt ein Mensch.</numerusform>
