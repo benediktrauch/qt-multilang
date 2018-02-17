@@ -3,6 +3,8 @@
 #include <iostream>
 #include <QDebug>
 
+// If translation is not working, you might forgott to copy language files into build folder
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -13,11 +15,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // Setting initial numbers
 
-    this->setDate(QDateTime::currentDateTimeUtc().toString(Qt::DefaultLocaleShortDate).chopped(6));
     this->setEnteredText("...");
     this->setFloatNumber(0.0);
     this->setIntNumber(0);
     ui->setupUi(this);
+
+    this->setDate(ui->calendarWidget->selectedDate().toString(Qt::DefaultLocaleLongDate));
 
     this->setCurrentLocale(QLocale::German);
     QLocale::setDefault(QLocale::German);
@@ -99,7 +102,7 @@ void MainWindow::retranslate()
     ui->doubleSpinBox->setLocale(m_currentLocale);
     ui->lineEdit->setLayoutDirection(m_currentLocale.textDirection());
     ui->calendarWidget->setLocale(m_currentLocale);
-    ui->retranslateUi(this);
+    //ui->retranslateUi(this);
 }
 
 QString MainWindow::date() const
